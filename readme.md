@@ -1,4 +1,5 @@
-bash```
+```
+bash
 
 Just learning some more go
 ```
