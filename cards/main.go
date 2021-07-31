@@ -1,10 +1,14 @@
 package main
 
+import "fmt"
 
 func main() {
 	cards := newDeck()
-	cards = append(cards, "Six of Spades")
 	
-	cards.Print()
+	hand, remainingCards := deal(cards, 5)
+	
+	hand.Print()
+	fmt.Println()
+	remainingCards.Print()
 }
 
