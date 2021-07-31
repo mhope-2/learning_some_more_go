@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import ("fmt"
+		"strings"
+)
 
 // deck struct
 type deck []string
@@ -35,5 +37,5 @@ func deal(d deck, handSize int) (deck, deck) {
 }
 
 func (d deck) toString() string {
-	fmt.Println("Hello")
-}
+	return strings.Join([]string(d), ",")
+} 
